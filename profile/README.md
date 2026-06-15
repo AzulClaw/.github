@@ -31,7 +31,7 @@
 
 <p align="center">
   <a href="https://github.com/AzulClaw/AzulClaw-Core">
-    <img alt="AzulClaw Marketplace screenshot" src="https://raw.githubusercontent.com/AzulClaw/AzulClaw-Core/main/img/screenshot_marketplace.png" />
+    <img alt="AzulClaw Marketplace screenshot" src="https://github.com/AzulClaw/.github/blob/main/img/screenshot_marketplace.png" />
   </a>
 </p>
 
@@ -55,7 +55,7 @@ La aplicaci&oacute;n empaquetada funciona en Windows 10/11, no requiere permisos
       Conversaciones con contexto de sesi&oacute;n, estado del modelo y workspace local.
     </td>
     <td width="50%" valign="top">
-      <img alt="AzulClaw files screenshot" src="https://raw.githubusercontent.com/AzulClaw/AzulClaw-Core/main/img/screenshot_files_01.png" />
+      <img alt="AzulClaw files screenshot" src="https://github.com/AzulClaw/.github/blob/main/img/screenshot_files_03.png" />
       <br />
       <strong>Context y archivos</strong>
       <br />
@@ -64,14 +64,14 @@ La aplicaci&oacute;n empaquetada funciona en Windows 10/11, no requiere permisos
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img alt="AzulClaw heartbeats screenshot" src="https://raw.githubusercontent.com/AzulClaw/AzulClaw-Core/main/img/screenshot_heartbeat01.png" />
+      <img alt="AzulClaw heartbeats screenshot" src="https://github.com/AzulClaw/.github/blob/main/img/screenshot_heartbeat01.png?raw=true" />
       <br />
       <strong>Heartbeats</strong>
       <br />
       Checks programados, recordatorios y rutinas de workspace ejecutadas de forma controlada.
     </td>
     <td width="50%" valign="top">
-      <img alt="AzulClaw login screenshot" src="https://raw.githubusercontent.com/AzulClaw/AzulClaw-Core/main/img/screenshot_login.png" />
+      <img alt="AzulClaw login screenshot" src="https://github.com/AzulClaw/.github/blob/main/img/screenshot_login.png?raw=true" />
       <br />
       <strong>Azure sign-in</strong>
       <br />
