@@ -35,31 +35,31 @@
   </a>
 </p>
 
-## Qu&eacute; es AzulClaw
+## What is AzulClaw
 
-AzulClaw es un asistente de IA de escritorio para equipos que trabajan en Azure y necesitan autonom&iacute;a sin perder control operativo.
+AzulClaw is a desktop AI assistant for teams working on Azure that need autonomy without losing operational control.
 
-Combina runtime local, memoria SQLite, l&iacute;mites de workspace, sandbox MCP y servicios Azure opcionales. La idea es simple: que los equipos puedan usar IA en su d&iacute;a a d&iacute;a sin convertir cada PC en un objetivo de ejecuci&oacute;n sin restricciones.
+It combines a local runtime, SQLite memory, workspace boundaries, an MCP sandbox, and optional Azure services. The idea is simple: teams can use AI in their day-to-day work without turning every PC into an unrestricted execution target.
 
-La aplicaci&oacute;n empaquetada funciona en Windows 10/11, no requiere permisos de administrador y trae incluido el backend Python y el servidor MCP.
+The packaged application runs on Windows 10/11, does not require administrator permissions, and includes the Python backend and MCP server.
 
-## Producto en uso
+## Product in use
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <img alt="AzulClaw chat screenshot" src="https://raw.githubusercontent.com/AzulClaw/AzulClaw-Core/main/img/screenshot01.png" />
       <br />
-      <strong>Chat local</strong>
+      <strong>Local chat</strong>
       <br />
-      Conversaciones con contexto de sesi&oacute;n, estado del modelo y workspace local.
+      Conversations with session context, model state, and local workspace.
     </td>
     <td width="50%" valign="top">
       <img alt="AzulClaw files screenshot" src="https://github.com/AzulClaw/.github/blob/main/img/screenshot_files_03.png" />
       <br />
-      <strong>Context y archivos</strong>
+      <strong>Context and files</strong>
       <br />
-      Trabajo con documentos y rutas validadas dentro del workspace configurado.
+      Work with documents and validated paths inside the configured workspace.
     </td>
   </tr>
   <tr>
@@ -68,30 +68,30 @@ La aplicaci&oacute;n empaquetada funciona en Windows 10/11, no requiere permisos
       <br />
       <strong>Heartbeats</strong>
       <br />
-      Checks programados, recordatorios y rutinas de workspace ejecutadas de forma controlada.
+      Scheduled checks, reminders, and workspace routines executed in a controlled way.
     </td>
     <td width="50%" valign="top">
       <img alt="AzulClaw login screenshot" src="https://github.com/AzulClaw/.github/blob/main/img/screenshot_login.png?raw=true" />
       <br />
       <strong>Azure sign-in</strong>
       <br />
-      Inicio de sesi&oacute;n gestionado con Microsoft Entra ID sin exponer secretos en archivos locales ordinarios.
+      Sign-in managed through Microsoft Entra ID without exposing secrets in regular local files.
     </td>
   </tr>
 </table>
 
-## Proyectos principales
+## Main projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>AzulClaw Core</h3>
       <p>
-        Aplicaci&oacute;n desktop con UI Tauri + React, backend Python,
-        memoria local, scheduler, Bot Framework adapter, cliente MCP y sandbox de filesystem.
+        Desktop application with a Tauri + React UI, Python backend,
+        local memory, scheduler, Bot Framework adapter, MCP client, and filesystem sandbox.
       </p>
       <p>
-        <a href="https://github.com/AzulClaw/AzulClaw-Core"><strong>Repositorio</strong></a>
+        <a href="https://github.com/AzulClaw/AzulClaw-Core"><strong>Repository</strong></a>
         |
         <a href="https://github.com/AzulClaw/AzulClaw-Core/tree/main/docs"><strong>Docs</strong></a>
         |
@@ -101,11 +101,11 @@ La aplicaci&oacute;n empaquetada funciona en Windows 10/11, no requiere permisos
     <td width="50%" valign="top">
       <h3>AzulClaw Marketplace</h3>
       <p>
-        Plano de control para publicar, certificar, aprobar, distribuir y revocar
-        skills antes de que lleguen a usuarios o entornos de producci&oacute;n.
+        Control plane to publish, certify, approve, distribute, and revoke
+        skills before they reach users or production environments.
       </p>
       <p>
-        <a href="https://github.com/AzulClaw/AzulClaw-Marketplace"><strong>Repositorio</strong></a>
+        <a href="https://github.com/AzulClaw/AzulClaw-Marketplace"><strong>Repository</strong></a>
         |
         <a href="https://github.com/AzulClaw/AzulClaw-Marketplace/tree/main/docs"><strong>Docs</strong></a>
         |
@@ -115,15 +115,15 @@ La aplicaci&oacute;n empaquetada funciona en Windows 10/11, no requiere permisos
   </tr>
 </table>
 
-## Por qu&eacute; existe
+## Why it exists
 
-- **Runtime local.** Conversaciones, preferencias, embeddings e &iacute;ndices de b&uacute;squeda viven en SQLite en el dispositivo.
-- **Aislamiento MCP.** Las operaciones de archivo pasan por un servidor MCP separado y validan rutas contra el workspace.
-- **Identidad Azure-native.** Microsoft Entra ID es la ruta preferida para Azure OpenAI; Key Vault permite mantener secretos fuera de archivos locales.
-- **Skills gobernadas.** Los empleados instalan capacidades aprobadas localmente; IT controla publicaci&oacute;n, versionado, aprobaci&oacute;n y revocaci&oacute;n.
-- **Canales con relay Azure.** Telegram es el conector first-party actual; Bot Service, Functions y Service Bus permiten canales externos sin exponer el runtime local como webhook p&uacute;blico.
+- **Local runtime.** Conversations, preferences, embeddings, and search indexes live in SQLite on the device.
+- **MCP isolation.** File operations go through a separate MCP server and validate paths against the workspace.
+- **Azure-native identity.** Microsoft Entra ID is the preferred path for Azure OpenAI; Key Vault keeps secrets out of local files.
+- **Governed skills.** Employees install approved capabilities locally; IT controls publishing, versioning, approval, and revocation.
+- **Azure relay channels.** Telegram is the current first-party connector; Bot Service, Functions, and Service Bus enable external channels without exposing the local runtime as a public webhook.
 
-## Arquitectura
+## Architecture
 
 ```text
 AzulClaw Desktop
@@ -143,19 +143,19 @@ AzulClaw Desktop
       +-- Azure Service Bus
 ```
 
-## Skills first-party
+## First-party skills
 
-- Desktop Organizer: organiza carpetas a trav&eacute;s de una herramienta MCP local.
-- Gemini: conecta AzulClaw con un agente remoto o endpoint compatible.
-- Telegram: conecta AzulClaw a Telegram mediante el patr&oacute;n Azure Bot relay.
+- Desktop Organizer: organizes folders through a local MCP tool.
+- Gemini: connects AzulClaw to a remote agent or compatible endpoint.
+- Telegram: connects AzulClaw to Telegram through the Azure Bot relay pattern.
 
-## Empezar
+## Get started
 
-- Web de la aplicaci&oacute;n: <https://www.azulclaw.com>
-- Descargar AzulClaw para Windows: <https://github.com/AzulClaw/AzulClaw-Core/releases/latest>
-- Documentaci&oacute;n de Core: <https://github.com/AzulClaw/AzulClaw-Core/tree/main/docs>
-- Marketplace y governance hub: <https://github.com/AzulClaw/AzulClaw-Marketplace>
-- Modelo de skills: <https://github.com/AzulClaw/AzulClaw-Core/tree/main/skills>
+- Application website: <https://www.azulclaw.com>
+- Download AzulClaw for Windows: <https://github.com/AzulClaw/AzulClaw-Core/releases/latest>
+- Core documentation: <https://github.com/AzulClaw/AzulClaw-Core/tree/main/docs>
+- Marketplace and governance hub: <https://github.com/AzulClaw/AzulClaw-Marketplace>
+- Skills model: <https://github.com/AzulClaw/AzulClaw-Core/tree/main/skills>
 
 ---
 
